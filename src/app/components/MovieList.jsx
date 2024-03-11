@@ -51,9 +51,9 @@ export const MovieList = ({ movies }) => {
                         <p>Genre : {movies[modalIndex].genre}</p>
                         <p>Release Date : {movies[modalIndex].release_date}</p>
                         <p>duration : {movies[modalIndex].duration} mins</p>
+                        <button className="movie-favorite" onClick={() => handleFavorite(movies[modalIndex])}>Favorite</button>
                         <p>Actor : {movies[modalIndex].actor}</p>
                         <p>{movies[modalIndex].synopsis_en}</p>
-                        <button className="movie-favorite" onClick={() => handleFavorite(movies[modalIndex])}>Favorite</button>
                     </div>
                 )}
             </Modal>
